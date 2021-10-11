@@ -1,0 +1,39 @@
+footer {
+    background-color: #F9CB9C;
+    margin-top: 5vh;
+    padding-top: 10px;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    box-shadow: 0px -10px 20px 0px rgba(0,0,0,0.15);
+}
+
+.informacionPagina {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.socialMediaBar, .ayudaUsuario {
+    list-style-type: none;
+}
+
+.socialMediaBar li{
+    display: flex;
+    align-items: center;
+}
+
+.socialMediaBar li > *{
+    margin: 5px;
+}
+
+.socialMediaBar img{
+    height: 2rem;
+}
+
+.ayudaUsuario {
+    padding-left: 0;
+}
+
+.ayudaUsuario li{
+    margin: 10px;
+}
