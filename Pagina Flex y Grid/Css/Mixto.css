@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.listaPelis {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+}

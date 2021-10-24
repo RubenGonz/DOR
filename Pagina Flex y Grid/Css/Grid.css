@@ -1,0 +1,28 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 10%;
+    align-items: center;
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.listaPelis {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.listaPelis img{
+    width: 250px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+}
