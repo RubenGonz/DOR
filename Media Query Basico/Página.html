@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Basico</title>
+
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: 40px;
+        }
+
+        /* Desktop */
+        @media screen and (min-width: 992px) and (max-width: 1200px) {
+            body {
+                grid-template-columns: 100px 1fr 1fr;
+            }
+        }
+
+        /* Tablet */
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            body {
+                grid-template-columns: 150px 150px 1fr;
+            }
+        }
+
+        /* Móvil apaisado */
+        @media screen and (min-width: 576px) and (max-width: 768px) {
+            body {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        /* Móvil */
+        @media all and (max-width: 576px) {
+            body {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>Div 1</div>
+    <div>Div 2</div>
+    <div>Div 3</div>
+    <div>Div 4</div>
+    <div>Div 5</div>
+    <div>Div 6</div>
+    <div>Div 7</div>
+    <div>Div 8</div>
+    <div>Div 9</div>
+</body>
+
+<script>
+    /**
+     * Conseguimos los contenedores
+    */
+    let DOM = {
+        contenedores: document.getElementsByTagName("div")
+    }
+
+    /**
+     * Función que crea un color aleatorio en hexadecimal
+    */
+    function generarColorRandom() {
+        return "#" + Math.floor(Math.random() * 16777215).toString(16);
+    }
+
+    /**
+     * Recorremos los contenedores aplicando el color
+    */
+    for (i = 0; DOM.contenedores.length; i++) {
+        DOM.contenedores[i].style.backgroundColor = generarColorRandom();
+    }
+
+</script>
+
+</html>
