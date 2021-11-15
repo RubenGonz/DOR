@@ -9,51 +9,81 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Diseño básico 2</title>
+
+    <style>
+        body div * {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .amarillo {
+            background-color: yellow;
+        }
+
+        .azul {
+            background-color: #87AADE;
+        }
+
+        .gris {
+            background-color: #CCCCCC;
+        }
+
+        .cian {
+            background-color: #00FFFF;
+        }
+
+        .naranja {
+            background-color: #FF9955;
+        }
+
+        .border-negro {
+            border: 2px solid black;
+        }
+    </style>
 </head>
 
 <body>
     <h1 class="text-center">Diseño básico 2</h1>
 
-    <div class="container text-50"></div>
-
-    <div class="row border fw-bold">
-        <div class="col-12 header">Header</div>
+    <div class="row">
+        <div class="col-12 border amarillo">Header</div>
     </div>
 
-    <div class="row border fw-bold">
-        <div class="col-6 col-sm-3 col-md-3 offset-md-3 border">1</div>
-        <div class="col-6 col-sm-3 border">2</div>
+    <div class="row">
+        <div class="col-6 col-sm-3 col-md-3 offset-md-3 border-negro azul">1</div>
+        <div class="col-6 col-sm-3 border-negro azul">2</div>
         <div class="w-100 d-none d-md-block"></div>
-        <div class="col-6 col-sm-3 col-md-3 border">3</div>
-        <div class="col-6 col-sm-3 col-md-3 offset-md-6 border">4</div>
+        <div class="col-6 col-sm-3 col-md-3 border-negro azul">3</div>
+        <div class="col-6 col-sm-3 col-md-3 offset-md-6 border-negro azul">4</div>
     </div>
 
-    <div class="row border fw-bold">
-        <div class="row d-none d-sm-flex d-md-none border">Tablet</div>
+    <div class="row">
+        <div class="row d-none d-sm-flex d-md-none border cian">Tablet</div>
     </div>
 
-    <div class="row border fw-bold">
-        <div class="col-6 col-sm-3 order-md-4 border">A</div>
-        <div class="col-6 col-sm-3 order-md-3 border">B</div>
-        <div class="col-6 col-sm-3 order-md-2 border">C</div>
-        <div class="col-6 col-sm-3 order-md-1 border">D</div>
+    <div class="row">
+        <div class="col-6 col-sm-3 order-md-4 border-negro gris">A</div>
+        <div class="col-6 col-sm-3 order-md-3 border-negro gris">B</div>
+        <div class="col-6 col-sm-3 order-md-2 border-negro gris">C</div>
+        <div class="col-6 col-sm-3 order-md-1 border-negro gris">D</div>
     </div>
 
-    <div class="row border fw-bold">
-        <div class="row d-sm-none d-md-flex border">Desktop</div>
+    <div class="row">
+        <div class="row d-none d-sm-none d-md-flex border-negro cian">Desktop</div>
     </div>
 
-    <div class="row border fw-bold">
-        <div class="row d-flex d-sm-none border">Mobile</div>
+    <div class="row">
+        <div class="row d-flex d-sm-none border-negro cian">Mobile</div>
     </div>
 
-    <div class="row border fw-bold">
-        <div class="col-12 col-sm-6 offset-md-3 col-md-3 border">:-D</div>
-        <div class=" d-none d-sm-flex col-sm-6 col-md-3 border">:-C</div>
+    <div class="row">
+        <div class="col-12 col-sm-6 offset-md-3 col-md-3 border-negro naranja">:-D</div>
+        <div class=" d-none d-sm-flex col-sm-6 col-md-3 border-negro naranja">:-C</div>
     </div>
 
-    <div class="row border fw-bold">
-        <div class="d-none d-sm-flex col-12 header">Footer</div>
+    <div class="row">
+        <div class="d-none d-sm-flex col-12 header border-negro amarillo">Footer</div>
     </div>
 </body>
 
