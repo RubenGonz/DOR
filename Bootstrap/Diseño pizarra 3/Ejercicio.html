@@ -9,63 +9,176 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Diseño pizarra 3</title>
+
+    <style>
+        .mario {
+            background-color: cyan;
+        }
+
+        .sonic {
+            background-color: #822022;
+        }
+
+        .manzana {
+            background-color: #8DB600;
+        }
+
+        .imagen {
+            max-height: 500px;
+        }
+    </style>
 </head>
 
 <body>
     <h1 class="text-center">Diseño pizarra 3</h1>
-    <div class="container">
+    <div class="p-5">
         <div class="row">
-            <div class="col-6 col-md-4 col-xl-7 order-xl-2 bg-danger text-center">
-                <img src="./ImagenesPagina/Mario.png" alt="Imagen de Mario" class="img-fluid mh-100">
+            <div class="col-6 col-md-4 col-xl-7 order-xl-2 p-0">
+                <div class="mario d-flex justify-content-center align-items-center h-100 p-3">
+                    <img src="./ImagenesPagina/Mario.png" alt="Imagen de Mario" class="img-fluid imagen">
+                </div>
             </div>
-            <div class="col-6 col-md-8 col-xl-5 order-xl-1 bg-info text-center">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+
+            <div class="col-6 col-md-8 col-xl-5 order-xl-1 manzana">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <form class="d-flex flex-column align-items-center m-3">
+                        <h1 class="text-center">¿Cuanto sabes de Mario?</h1>
+
+                        <div class="form-group m-2">
+                            <label for="segundoNombre">Segundo nombre de Mario</label>
+                            <input type="text" class="form-control" id="segundoNombre">
+                        </div>
+
+                        <div class="form-group m-2">
+                            <label for="profesion">Profesión</label>
+                            <input type="text" class="form-control" id="profesion">
+                            <small id="profesionAyuda" class="form-text text-muted">En el juego hay tuberías</small>
+                        </div>
+
+                        <div class="form-check m-2">
+                            <div>
+                                <input type="radio" name="genero" class="form-check-input float-none m-1" id="Hombre">
+                                <label class="form-check-label" for="Hombre">Hombre</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="genero" class="form-check-input float-none m-1" id="Mujer">
+                                <label class="form-check-label" for="Mujer">Mujer</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary m-2">Enviar</button>
+                    </form>
+                </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12 d-md-none d-xl-none bg-danger text-center">Movil</div>
+            <div class="col-12 d-md-none d-xl-none bg-black text-center text-white">Movil</div>
         </div>
 
         <div class="row">
-            <div class="col-6 col-md-4 col-xl-5 bg-danger text-center">
-                <figure class="figure">
-                    <img src="./ImagenesPagina/Sonic.png" class="figure-img img-fluid rounded"
-                        alt="A generic square placeholder image with rounded corners in a figure.">
-                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+            <div class="col-6 col-md-4 col-xl-5 p-0">
+                <figure class="figure sonic d-flex flex-column justify-content-center align-items-center h-100 p-3">
+                    <img src="./ImagenesPagina/Sonic.png" class="figure-img img-fluid imagen" alt="Imagen de de Sonic">
+                    <figcaption class="figure-caption text-white text-center">Imagen del personaje Sonic</figcaption>
                 </figure>
             </div>
-            <div class="col-6 col-md-8 col-xl-7 bg-info text-center">Formulario</div>
+
+            <div class="col-6 col-md-8 col-xl-7 bg-info">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <form class="d-flex flex-column align-items-center m-3">
+                        <h1 class="text-center">¿Cuanto sabes de Sonic?</h1>
+
+                        <div class="form-group m-2">
+                            <label for="animal">¿Que animal es Sonic?</label>
+                            <input type="text" class="form-control" id="animal">
+                            <small id="animalAyuda" class="form-text text-muted">Pista: Pica</small>
+                        </div>
+
+                        <div class="form-group m-2">
+                            <label for="companiero">Nombre de su compañero</label>
+                            <input type="text" class="form-control" id="companiero">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary m-2">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <div class="row">
-            <div class="col-12 d-none d-md-block d-xl-none bg-danger text-center">Tablet</div>
+            <div class="col-12 d-none d-md-block d-xl-none bg-black text-center text-white">Tablet</div>
         </div>
 
         <div class="row">
-            <div class="col-12 d-none d-md-none d-xl-block bg-danger text-center">Pantalla XL</div>
+            <div class="col-12 d-none d-md-none d-xl-block bg-black text-center text-white">Pantalla XL</div>
         </div>
 
         <div class="row">
-            <div class="col-6 col-md-4 col-xl-7 order-xl-2 bg-danger text-center ">Tabla</div>
-            <div class="col-6 col-md-8 col-xl-5 order-xl-1 bg-info text-center">Formulario</div>
+            <div class="col-6 col-md-4 col-xl-7 order-xl-2 p-0">
+                <div class="d-flex justify-content-center align-items-center bg-danger h-100 p-3">
+                    <table class="table table-striped table-danger m-0">
+                        <thead>
+                            <tr>
+                                <th scope="col">Juego</th>
+                                <th scope="col">Personaje principal</th>
+                                <th scope="col">Personaje secundario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Super Mario Bros.</th>
+                                <td>Mario</td>
+                                <td>Luigui</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sonic the Hedgehog</th>
+                                <td>Sonic</td>
+                                <td>Tails</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">The Legend of Zelda</th>
+                                <td>Zelda</td>
+                                <td>Link</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-6 col-md-8 col-xl-5 order-xl-1 manzana">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <form class="d-flex flex-column align-items-center m-3">
+                        <h1 class="text-center">¿Cuanto sabes de Juegos?</h1>
+
+                        <div class="form-group m-2">
+                            <label for="error">¿En que juego hay un error con respecto a la tabla?</label>
+                            <input type="text" class="form-control" id="error">
+                        </div>
+
+                        <div class="form-group m-2">
+                            <label for="princesa">Nombre de la princesa de 'The Legend of Zelda'</label>
+                            <input type="text" class="form-control" id="princesa">
+                        </div>
+
+                        <div class="form-check m-2">
+                            <p>¿Quien es mas rápido?</p>
+                            <div>
+                                <input type="radio" name="rapidez" class="form-check-input float-none m-1" id="Sonic">
+                                <label class="form-check-label" for="Sonic">Sonic</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="rapidez" class="form-check-input float-none m-1"
+                                    id="Personas">
+                                <label class="form-check-label" for="Personas">Personas</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary m-2">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </body>
