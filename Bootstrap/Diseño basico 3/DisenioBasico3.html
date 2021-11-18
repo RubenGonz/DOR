@@ -9,11 +9,114 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Diseño básico 3</title>
+
+    <style>
+        .border-negro {
+            border: 2px solid black;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #FFB380;
+        }
+
+        .uno {
+            background-color: red;
+        }
+
+        .dos {
+            background-color: #00FFFF;
+            text-align: center;
+        }
+
+        .tres {
+            background-color: red;
+            text-align: right;
+        }
+
+        .footer1, .footer2 {
+            background-color: yellow;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 576px) {
+            .header {
+                background-color: #00FFFF;
+                text-align: left;
+            }
+
+            .dos {
+                background-color: red;
+                text-align: right;
+            }
+
+            .tres {
+                background-color: #00FF00;
+                text-align: center;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .header {
+                background-color: yellow;
+            }
+
+            .uno {
+                text-align: center;
+            }
+
+            .dos {
+                text-align: center;
+            }
+
+            .tres {
+                background-color: red;
+            }
+
+            .footer1 {
+                text-align: right;
+            }
+
+            .footer2 {
+                text-align: left;
+            }
+
+            .fila2 div {
+                min-height: 300px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <h1 class="text-center">Diseño básico 3</h1>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div>
+                <div class="border-negro header my-3 p-3 font-italic">Header</div>
+            </div>
+        </div>
+        <div class="row fila2">
+            <div class="col-sm-6 col-md-4 my-3">
+                <div class="border-negro uno display-1 p-3">1</div>
+            </div>
+            <div class="col-sm-6 col-md-4 my-3">
+                <div class="border-negro dos display-1 p-3">2</div>
+            </div>
+            <div class="col-md-4 my-3">
+                <div class="border-negro tres display-1 p-3">3</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 my-3">
+                <div class="border-negro footer1 p-3 font-italic">Footer 1</div>
+            </div>
+            <div class="col-md-6 my-3">
+                <div class="border-negro footer2 p-3 font-italic">Footer 2</div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
