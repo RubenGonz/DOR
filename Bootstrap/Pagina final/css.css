@@ -1,0 +1,14 @@
+.reproductor {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-img {
+    width: 2rem;
+}
+
+.footer-img {
+    width: 5rem;
+}

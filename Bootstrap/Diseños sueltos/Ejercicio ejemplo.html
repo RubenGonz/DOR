@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Probando componentes</h1>
+    </header>
+
+    <main class="row">
+        <div id="carrusel" class="carousel slide col-12 offset-md-2 col-md-8 offset-xl-1 col-xl-10" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Imagenes/Canarias.png" class="d-block w-100" alt="Imagen de Canarias">
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagenes/Hawaii.png" class="d-block w-100" alt="Imagen de Hawaii">
+                </div>
+                <div class="carousel-item">
+                    <img src="Imagenes/Japon.png" class="d-block w-100" alt="Imagen de Japón">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <div class="col-12 w-100 invisible">Salto de linea</div>
+
+        <div class="col-12 offset-md-2 col-md-8 offset-xl-1 col-xl-10">
+            <div class="d-flex flex-row">
+                <div class="card w-50">
+                    <img src="Imagenes/Canarias.png" style="width: 500px;" class="card-img-top" alt="...">
+            
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            
+                <div class="card w-50 " aria-hidden="true">
+                    <img src="..." style="width: 500px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-4"></span>
+                        </h5>
+                        <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-6"></span>
+                            <span class="placeholder col-8"></span>
+                        </p>
+                        <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-3"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    
+</body>
+
+</html>
