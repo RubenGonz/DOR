@@ -1,14 +1,23 @@
-.reproductor {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
 .nav-img {
     width: 2rem;
 }
 
 .footer-img {
     width: 5rem;
+}
+
+main>div>div {
+    height: 80vh;
+}
+
+.contain {
+    background-color: #30363c;
+    overflow-y: scroll;
+}
+
+.reproductor {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }

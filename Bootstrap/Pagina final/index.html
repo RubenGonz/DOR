@@ -10,33 +10,75 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css.css">
-    <title>Hello, world!</title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <title>Music Zone</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header class="sticky-top">
+        <nav class="navbar navbar-dark bg-dark border-bottom border-primary">
             <div class="container-fluid">
                 <div>
                     <a href=""><img src="img/Logo.png" alt="Logo" class="nav-img"></a>
                     <a class="navbar-brand" href="#">Music Zone</a>
                 </div>
                 <span class="navbar-brand">Donde las palabras fallan, la música habla</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-                    class="bi bi-person-circle text-primary" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                    <path fill-rule="evenodd"
-                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                </svg>
+                <button class="navbar-toggler" data-bs-toggle="offcanvas" href="#infoEmpresa">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end bg-dark text-white border-start border-primary" tabindex="-1" id="infoEmpresa">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title">Información de la empresa</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                      <div>
+                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                      </div>
+                    </div>
+                  </div>
             </div>
         </nav>
     </header>
 
     <main>
+        <div class="row m-0">
+            <div class="col-2 bg-dark text-white pt-2 ps-4 border-end border-primary">
+                <p>Izda</p>
+            </div>
+            <div class="col-8 contain text-white pt-2">
+                <section>
+                    <div id="carruselAlbumes" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/disco.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/disco.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/disco.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                      </div>
+                </section>
 
+                <section>
+                    cartas
+                </section>
+                <section>
+                    cartas
+                </section>
+            </div>
+            <div class="col-2 bg-dark text-white pt-2 border-start border-primary">
+                <p>Hola</p>
+            </div>
+        </div>
     </main>
 
-    <footer class="reproductor bg-dark text-light p-3 d-flex justify-content-between">
+    <footer class="reproductor bg-dark text-light p-3 d-flex justify-content-between border-top border-primary">
         <div class="d-flex align-items-center">
             <img src="img/disco.jpg" alt="Logo" class="footer-img">
             <div class="d-flex flex-column justify-content-around ps-2">
