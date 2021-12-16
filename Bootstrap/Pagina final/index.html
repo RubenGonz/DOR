@@ -27,53 +27,192 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="offcanvas offcanvas-end bg-dark text-white border-start border-primary" tabindex="-1" id="infoEmpresa">
+                <div class="offcanvas offcanvas-end bg-dark text-white border-start border-primary" tabindex="-1"
+                    id="infoEmpresa">
                     <div class="offcanvas-header">
-                      <h5 class="offcanvas-title">Información de la empresa</h5>
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <h5 class="offcanvas-title">Información de la empresa</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
 
                     <div class="offcanvas-body">
-                      <div>
-                        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                      </div>
+                        <div>
+                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                            text, images, lists, etc.
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
         <div class="row m-0">
-            <div class="col-2 bg-dark text-white pt-2 ps-4 border-end border-primary">
-                <p>Izda</p>
+            <div class="col-2 bg-dark text-white ps-4 border-end border-primary">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                      </div>
+                    </div>
+                  </div>
             </div>
+            
             <div class="col-8 contain text-white pt-2">
                 <section>
-                    <div id="carruselAlbumes" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carruselAlbumes" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="img/disco.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="img/disco.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="img/disco.jpg" class="d-block w-100" alt="...">
-                          </div>
+                            <div class="carousel-item active">
+                                <div class="bg-dark p-3 d-flex flex-row">
+                                    <div class="w-50"><img src="img/Neffex.png" class="d-block w-100"
+                                            alt="Logo de Neffex"></div>
+                                    <div class="w-50 d-flex flex-column justify-content-around ps-2">
+                                        <div>
+                                            <h3>Neffex</h3>
+                                        </div>
+                                        <div>
+                                            <p class="text-secondary">Neffex es un proyecto musical estadounidense
+                                                compuesto por Bryce Savage y anteriormente Cameron Wales. Producen
+                                                remixes y canciones originales caracterizadas por una mezcla de géneros
+                                                electrónicos y rap</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="bg-dark p-3 d-flex flex-row">
+                                    <div class="w-50"><img src="img/ADDC.png" class="d-block w-100" alt="Logo de AC/DC">
+                                    </div>
+                                    <div class="w-50 d-flex flex-column justify-content-around ps-2">
+                                        <div>
+                                            <h3>AC/DC</h3>
+                                        </div>
+                                        <div>
+                                            <p class="text-secondary">AC/DC es una banda de hard rock
+                                                británica-australiana, formada en 1973 en Australia por los hermanos
+                                                escoceses Malcolm Young y Angus Young</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="bg-dark p-3 d-flex flex-row">
+                                    <div class="w-50"><img src="img/AeroSmith.jpg" class="d-block w-100"
+                                            alt="Logo de AeroSmith"></div>
+                                    <div class="w-50 d-flex flex-column justify-content-around ps-2">
+                                        <div>
+                                            <h3>AeroSmith</h3>
+                                        </div>
+                                        <div>
+                                            <p class="text-secondary">Aerosmith es una banda estadounidense de
+                                                rock formada en Boston en 1970. Sus miembros son: Steven Tyler, Joe
+                                                Perry, Tom Hamilton, Joey Kramer y Brad Whitford.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="bg-dark p-3 d-flex flex-row">
+                                    <div class="w-50"><img src="img/SteveAoki.jpg" class="d-block w-100"
+                                            alt="Logo de AeroSmith"></div>
+                                    <div class="w-50 d-flex flex-column justify-content-around ps-2">
+                                        <div>
+                                            <h3>Steve Aoki</h3>
+                                        </div>
+                                        <div>
+                                            <p class="text-secondary">Steven Hiroyuki Aoki más conocido como Steve Aoki,
+                                                es un DJ y productor estadounidense-japonés de EDM y fundador del sello
+                                                discográfico Dim Mak Records.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </section>
 
                 <section>
-                    cartas
+                    <h3>Lo más escuchado</h3>
+
                 </section>
                 <section>
-                    cartas
+                    <h3>Lo más escuchado</h3>
                 </section>
             </div>
-            <div class="col-2 bg-dark text-white pt-2 border-start border-primary">
-                <p>Hola</p>
+            <div class="col-2 bg-dark text-white pt-2 border-start border-primary p-3 pt-3">
+                <div>
+                    <span class="h4 me-3">Amigos</span>
+                    <span class="text-light position-relative">
+                        <span class="position-absolute translate-middle badge rounded-pill bg-primary">4</span>
+                    </span>
+                </div>
+
+                <hr>
+
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center my-4">
+                        <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo1.jpg" alt=""></div>
+                        <div>
+                            <div>María Álvarez</div>
+                            <hr class="m-0">
+                            <span>Lagrimas desordenadas ·</span>
+                            <span class="text-secondary">Melendi</span>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center my-4">
+                        <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo2.jpg" alt=""></div>
+                        <div>
+                            <div>Juan Martin</div>
+                            <hr class="m-0">
+                            <span>Symphony ·</span>
+                            <span class="text-secondary">Zara Larsson</span>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center my-4">
+                        <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo3.jpg" alt=""></div>
+                        <div>
+                            <div>Manuel Ruiz</div>
+                            <hr class="m-0">
+                            <span>Malbec ·</span>
+                            <span class="text-secondary">Duki</span>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-center my-4">
+                        <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo4.jpg" alt=""></div>
+                        <div>
+                            <div>Gustavo González</div>
+                            <hr class="m-0">
+                            <span>Rap God ·</span>
+                            <span class="text-secondary">Eminem</span>
+                        </div>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </main>
