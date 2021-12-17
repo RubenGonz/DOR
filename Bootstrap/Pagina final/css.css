@@ -10,8 +10,7 @@ main>div>div {
     height: 80vh;
 }
 
-.contain {
-    background-color: #30363c;
+.scrollActivado {
     overflow-y: scroll;
 }
 
@@ -25,3 +24,16 @@ main>div>div {
 .amigo {
     width: 3rem;
 }
+
+.grisClaro {
+    background-color: #30363c;
+}
+
+.botonCanciones {
+    padding: 1rem 1.25rem;
+}
+
+.cartaMenu {
+    width: 250px;
+}
+
