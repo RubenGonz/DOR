@@ -20,13 +20,14 @@
             <div class="container-fluid">
                 <div>
                     <a href=""><img src="img/Logo.png" alt="Logo" class="nav-img"></a>
-                    <a class="navbar-brand" href="#">Music Zone</a>
+                    <a class="navbar-brand d-lg-inline d-none" href="#">Music Zone</a>
                 </div>
 
-                <span class="navbar-brand">Donde las palabras fallan, la música habla</span>
+                <span class="navbar-brand d-md-inline d-none">Donde las palabras fallan, la música habla</span>
+                <span class="navbar-brand d-md-none d-inline">Music Zone</span>
 
                 <div data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <span class="text-light fw-bold me-1">Iniciar sesión</span>
+                    <span class="text-light fw-bold me-1 d-lg-inline d-none">Iniciar sesión</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                         class="bi bi-person-circle text-primary" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -68,10 +69,116 @@
     </header>
 
     <main>
-        <div class="row m-0">
-            <div class="col-2 scrollActivado bg-dark text-white border-end border-primary p-0">
+        <div class="row m-0 text-white">
+            <div class="col-xxl-2 col-md-3 d-md-block d-none scrollActivado bg-dark border-end border-primary p-0">
 
-                <button class="bg-dark text-light border-0 botonOpciones pb-2" type="button">
+                <div class="d-xxl-none">
+                    <button class="bg-dark text-light border-0 botonOpciones pb-2 text-start" type="button"
+                        data-bs-toggle="offcanvas" href="#amigos">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-people-fill text-primary" viewBox="0 0 16 16">
+                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            <path fill-rule="evenodd"
+                                d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                        </svg>
+                        <div class="d-inline">
+                            <span class="ms-3">Amigos</span>
+                            <span class="text-light position-relative ms-2">
+                                <span class="position-absolute translate-middle badge rounded-pill bg-primary">4</span>
+                            </span>
+                        </div>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end bg-dark text-white border-start border-primary p-3 pt-3"
+                        tabindex="-1" id="amigos">
+                        <div>
+                            <span class="h4 me-3">Amigos</span>
+                            <span class="text-light position-relative">
+                                <span class="position-absolute translate-middle badge rounded-pill bg-primary">4</span>
+                            </span>
+                        </div>
+
+                        <hr>
+
+                        <ul class="list-unstyled scrollActivado">
+                            <li class="d-flex align-items-center my-4">
+                                <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo1.jpg" alt=""></div>
+                                <div>
+                                    <div>María Álvarez</div>
+                                    <hr class="m-0">
+                                    <span>Lagrimas desordenadas ·</span>
+                                    <span class="text-secondary">Melendi</span>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center my-4">
+                                <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo2.jpg" alt=""></div>
+                                <div>
+                                    <div>Juan Martin</div>
+                                    <hr class="m-0">
+                                    <span>Symphony ·</span>
+                                    <span class="text-secondary">Zara Larsson</span>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center my-4">
+                                <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo3.jpg" alt=""></div>
+                                <div>
+                                    <div>Manuel Ruiz</div>
+                                    <hr class="m-0">
+                                    <span>Malbec ·</span>
+                                    <span class="text-secondary">Duki</span>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center my-4">
+                                <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo4.jpg" alt=""></div>
+                                <div>
+                                    <div>Gustavo González</div>
+                                    <hr class="m-0">
+                                    <span>Rap God ·</span>
+                                    <span class="text-secondary">Eminem</span>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center my-4 opacity-25">
+                                <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo5.jpg" alt=""></div>
+                                <div>
+                                    <div>Alexia Álvarez</div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center my-4 opacity-25">
+                                <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo6.jpg" alt=""></div>
+                                <div>
+                                    <div>Federico Stupendi</div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center my-4 opacity-25">
+                                <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo7.jpg" alt=""></div>
+                                <div>
+                                    <div>Leonora Pacheco</div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center my-4 opacity-25">
+                                <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo8.jpg" alt=""></div>
+                                <div>
+                                    <div>Isaias Dominguez</div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center my-4 opacity-25">
+                                <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo9.jpg" alt=""></div>
+                                <div>
+                                    <div>Alejandro Magno</div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center my-4 opacity-25">
+                                <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo10.jpg" alt=""></div>
+                                <div>
+                                    <div>Carmen Rayquaza</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="bg-dark text-light border-0 botonOpciones pb-2 text-start" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-music-note text-primary" viewBox="0 0 16 16">
                         <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
@@ -215,7 +322,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <button class="bg-dark text-light border-0 botonOpciones py-2" type="button"
+                        <button class="bg-dark text-light border-0 botonOpciones py-2 text-start" type="button"
                             data-bs-toggle="offcanvas" href="#infoEmpresa">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-info-circle text-primary" viewBox="0 0 16 16">
@@ -349,72 +456,502 @@
                 </div>
             </div>
 
-            <div class="col-8 scrollActivado grisClaro text-white pt-2">
+            <div class="col-xxl-8 col-md-9 col-12 scrollActivado grisClaro pt-2">
+                <section class="d-block d-md-none">
+                    <button class="btn btn-secondary w-100" type="button" id="botonOpciones">
+                        Opciones
+                    </button>
+
+                    <ul class="w-100 bg-dark text-light list-unstyled d-none" id="listaOpciones">
+                        <li>
+                            <div>
+                                <button class="bg-dark text-light border-0 botonOpciones pb-2 text-start d-block"
+                                    type="button" data-bs-toggle="offcanvas" href="#amigos2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-people-fill text-primary" viewBox="0 0 16 16">
+                                        <path
+                                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                        <path fill-rule="evenodd"
+                                            d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
+                                        <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                                    </svg>
+                                    <div class="d-inline">
+                                        <span class="ms-3">Amigos</span>
+                                        <span class="text-light position-relative ms-2">
+                                            <span
+                                                class="position-absolute translate-middle badge rounded-pill bg-primary">4</span>
+                                        </span>
+                                    </div>
+                                </button>
+
+                                <div class="offcanvas offcanvas-end bg-dark text-white border-start border-primary p-3 pt-3"
+                                    tabindex="-1" id="amigos2">
+                                    <div>
+                                        <span class="h4 me-3">Amigos</span>
+                                        <span class="text-light position-relative">
+                                            <span
+                                                class="position-absolute translate-middle badge rounded-pill bg-primary">4</span>
+                                        </span>
+                                    </div>
+
+                                    <hr>
+
+                                    <ul class="list-unstyled scrollActivado">
+                                        <li class="d-flex align-items-center my-4">
+                                            <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo1.jpg"
+                                                    alt=""></div>
+                                            <div>
+                                                <div>María Álvarez</div>
+                                                <hr class="m-0">
+                                                <span>Lagrimas desordenadas ·</span>
+                                                <span class="text-secondary">Melendi</span>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center my-4">
+                                            <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo2.jpg"
+                                                    alt=""></div>
+                                            <div>
+                                                <div>Juan Martin</div>
+                                                <hr class="m-0">
+                                                <span>Symphony ·</span>
+                                                <span class="text-secondary">Zara Larsson</span>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center my-4">
+                                            <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo3.jpg"
+                                                    alt=""></div>
+                                            <div>
+                                                <div>Manuel Ruiz</div>
+                                                <hr class="m-0">
+                                                <span>Malbec ·</span>
+                                                <span class="text-secondary">Duki</span>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center my-4">
+                                            <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo4.jpg"
+                                                    alt=""></div>
+                                            <div>
+                                                <div>Gustavo González</div>
+                                                <hr class="m-0">
+                                                <span>Rap God ·</span>
+                                                <span class="text-secondary">Eminem</span>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center my-4 opacity-25">
+                                            <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo5.jpg"
+                                                    alt=""></div>
+                                            <div>
+                                                <div>Alexia Álvarez</div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center my-4 opacity-25">
+                                            <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo6.jpg"
+                                                    alt=""></div>
+                                            <div>
+                                                <div>Federico Stupendi</div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center my-4 opacity-25">
+                                            <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo7.jpg"
+                                                    alt=""></div>
+                                            <div>
+                                                <div>Leonora Pacheco</div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center my-4 opacity-25">
+                                            <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo8.jpg"
+                                                    alt=""></div>
+                                            <div>
+                                                <div>Isaias Dominguez</div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center my-4 opacity-25">
+                                            <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo9.jpg"
+                                                    alt=""></div>
+                                            <div>
+                                                <div>Alejandro Magno</div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-center my-4 opacity-25">
+                                            <div class="me-3"><img class="rounded-circle amigo" src="img/Amigo10.jpg"
+                                                    alt=""></div>
+                                            <div>
+                                                <div>Carmen Rayquaza</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <button class="bg-dark text-light border-0 botonOpciones pb-2 text-start" type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-music-note text-primary" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
+                                        <path fill-rule="evenodd" d="M9 3v10H8V3h1z" />
+                                        <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5V2.82z" />
+                                    </svg>
+                                    <span class="ms-3">Mis canciones</span>
+                                </button>
+
+                                <div class="accordion accordion-flush" id="acordeonOpciones">
+                                    <div class="accordion-item bg-dark">
+
+                                        <h2 class="accordion-header" id="cabeceraAcordeon1">
+                                            <button class="accordion-button collapsed bg-dark text-light" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#cuerpoAcordeon1"
+                                                aria-expanded="false" aria-controls="cuerpoAcordeon1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-music-note-list text-primary"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
+                                                    <path fill-rule="evenodd" d="M12 3v10h-1V3h1z" />
+                                                    <path
+                                                        d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
+                                                </svg>
+                                                <span class="ms-3">PlayLists</span>
+                                            </button>
+                                        </h2>
+                                        <div id="cuerpoAcordeon1" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-cabeceraAcordeon1"
+                                            data-bs-parent="#acordeonOpciones">
+                                            <div class="accordion-body grisClaro">
+                                                <ul class="mb-0">
+                                                    <li>This is Melendi</li>
+                                                    <li>Mood: Chill</li>
+                                                    <li>Gym Time</li>
+                                                    <li>Openings</li>
+                                                    <li>Summer vibes</li>
+                                                    <li>Playlist del coche</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item bg-dark">
+                                        <h2 class="accordion-header" id="cabeceraAcordeon2">
+                                            <button class="accordion-button collapsed bg-dark text-light" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#cuerpoAcordeon2"
+                                                aria-expanded="false" aria-controls="cuerpoAcordeon2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-soundwave text-primary"
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
+                                                </svg>
+                                                <span class="ms-3">Emisoras</span>
+                                            </button>
+                                        </h2>
+                                        <div id="cuerpoAcordeon2" class="accordion-collapse collapse"
+                                            aria-labelledby="cabeceraAcordeon2" data-bs-parent="#acordeonOpciones">
+                                            <div class="accordion-body grisClaro">
+                                                <ul class="mb-0">
+                                                    <li>Los 40 principales</li>
+                                                    <li>La Ser</li>
+                                                    <li>Onda Cero</li>
+                                                    <li>La Cope</li>
+                                                    <li>Europa FM</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item bg-dark">
+                                        <h2 class="accordion-header" id="cabeceraAcordeon3">
+                                            <button class="accordion-button collapsed bg-dark text-light" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#cuerpoAcordeon3"
+                                                aria-expanded="false" aria-controls="cuerpoAcordeon3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-disc text-primary"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                    <path
+                                                        d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1zm4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5z" />
+                                                </svg>
+                                                <span class="ms-3">Albumes</span>
+                                            </button>
+                                        </h2>
+                                        <div id="cuerpoAcordeon3" class="accordion-collapse collapse"
+                                            aria-labelledby="cabeceraAcordeon3" data-bs-parent="#acordeonOpciones">
+                                            <div class="accordion-body grisClaro">
+                                                <ul class="mb-0">
+
+                                                    <li>
+                                                        <ol class="breadcrumb m-0">
+                                                            <li class="breadcrumb-item">NEFFEX</li>
+                                                            <li class="breadcrumb-item active">Destiny: The
+                                                                collection</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        <ol class="breadcrumb m-0">
+                                                            <li class="breadcrumb-item">Trueno</li>
+                                                            <li class="breadcrumb-item active">Atrevido</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        <ol class="breadcrumb m-0">
+                                                            <li class="breadcrumb-item">Melendi</li>
+                                                            <li class="breadcrumb-item active">10:20:40</li>
+                                                        </ol>
+                                                    </li>
+                                                    <li>
+                                                        <ol class="breadcrumb m-0">
+                                                            <li class="breadcrumb-item">J Balvin</li>
+                                                            <li class="breadcrumb-item active">Energía</li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item bg-dark">
+                                        <h2 class="accordion-header" id="cabeceraAcordeon4">
+                                            <button class="accordion-button collapsed bg-dark text-light" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#cuerpoAcordeon4"
+                                                aria-expanded="false" aria-controls="cuerpoAcordeon4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-people text-primary"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                                                </svg>
+                                                <span class="ms-3">Artistas</span>
+                                            </button>
+                                        </h2>
+                                        <div id="cuerpoAcordeon4" class="accordion-collapse collapse"
+                                            aria-labelledby="cabeceraAcordeon4" data-bs-parent="#acordeonOpciones">
+                                            <div class="accordion-body grisClaro">
+                                                <ul class="mb-0">
+                                                    <li>NEFFEX</li>
+                                                    <li>Melendi</li>
+                                                    <li>Don Diablo</li>
+                                                    <li>Trueno</li>
+                                                    <li>AC/DC</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <button class="bg-dark text-light border-0 botonOpciones py-2 text-start"
+                                            type="button" data-bs-toggle="offcanvas" href="#infoEmpresa2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-info-circle text-primary"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                <path
+                                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                            </svg>
+                                            <span class="ms-3">Información de la empresa</span>
+                                        </button>
+
+                                        <div class="offcanvas offcanvas-end bg-dark text-white border-start border-primary"
+                                            tabindex="-1" id="infoEmpresa2">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title">Información de la empresa</h5>
+                                                <button type="button" class="btn-close text-reset"
+                                                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="offcanvas-body">
+                                                <div class="py-3">
+                                                    <div>EMPRESA</div>
+                                                    <ul>
+                                                        <li class="ps-3">Acerca de</li>
+                                                        <li class="ps-3">Empleo</li>
+                                                        <li class="ps-3">For the Record</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="py-3">
+                                                    <div>COMUNIDADES</div>
+                                                    <ul>
+                                                        <li class="ps-3">Para artistas</li>
+                                                        <li class="ps-3">Desarrolladores</li>
+                                                        <li class="ps-3">Publicidad</li>
+                                                        <li class="ps-3">Proveedores</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="py-3">
+                                                    <div>ENLACES ÚTILES</div>
+                                                    <ul>
+                                                        <li class="ps-3">Asistencia</li>
+                                                        <li class="ps-3">Reproductor web</li>
+                                                        <li class="ps-3">App gratis para móvil</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="px-3">
+                                    <hr>
+                                </div>
+
+                                <h5 class="px-3">Escuchado recientemente</h5>
+
+                                <div class="px-3">
+                                    <hr>
+                                </div>
+
+                                <div>
+                                    <ul class="list-unstyled px-3">
+                                        <li class="my-2">
+                                            <span>Missing ·</span>
+                                            <span class="text-secondary">LIUFO</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>DOOM ·</span>
+                                            <span class="text-secondary">Calvania</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>Getaway - Koven Remix ·</span>
+                                            <span class="text-secondary">Tritonal</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>Eyes ·</span>
+                                            <span class="text-secondary">Sloth Punch</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>SHADOWS ·</span>
+                                            <span class="text-secondary">BLVCK CROWS</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>Tokyo ·</span>
+                                            <span class="text-secondary">Dwin</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>Intro ·</span>
+                                            <span class="text-secondary">Sickick</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>My Turn ·</span>
+                                            <span class="text-secondary">Toby Green</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>Proud Of You ·</span>
+                                            <span class="text-secondary">EARTHGANG</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>This Time ·</span>
+                                            <span class="text-secondary">Kayzo</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>Astronaut In The Ocean ·</span>
+                                            <span class="text-secondary">Masked Wolf</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>Bludfire ·</span>
+                                            <span class="text-secondary">Eva Simons</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>I Wanna Do ·</span>
+                                            <span class="text-secondary">Chemical Surf</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>Rumors ·</span>
+                                            <span class="text-secondary">NEFFEX</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>Fire ·</span>
+                                            <span class="text-secondary">TheUnder</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>Roses ·</span>
+                                            <span class="text-secondary">SAint</span>
+                                        </li>
+                                        <li class="my-2">
+                                            <span>Material Love ·</span>
+                                            <span class="text-secondary">Tag Shai</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </section>
+
                 <section>
                     <h3>Lo esta petando...</h3>
-                    <div id="carruselAlbumes" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="bg-dark p-3 d-flex flex-row">
-                                    <div class="w-50"><img src="img/Neffex.png" class="d-block w-100"
-                                            alt="Logo de Neffex"></div>
-                                    <div class="w-50 d-flex flex-column justify-content-around ps-2">
-                                        <div>
-                                            <h3>Neffex</h3>
-                                        </div>
-                                        <div>
-                                            <p class="text-secondary">Neffex es un proyecto musical estadounidense
-                                                compuesto por Bryce Savage y anteriormente Cameron Wales. Producen
-                                                remixes y canciones originales caracterizadas por una mezcla de géneros
-                                                electrónicos y rap</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="bg-dark p-3 d-flex flex-row">
-                                    <div class="w-50"><img src="img/ADDC.png" class="d-block w-100" alt="Logo de AC/DC">
-                                    </div>
-                                    <div class="w-50 d-flex flex-column justify-content-around ps-2">
-                                        <div>
-                                            <h3>AC/DC</h3>
-                                        </div>
-                                        <div>
-                                            <p class="text-secondary">AC/DC es una banda de hard rock
-                                                británica-australiana, formada en 1973 en Australia por los hermanos
-                                                escoceses Malcolm Young y Angus Young</p>
+                    <div class="row">
+                        <div class="col offset-xxl-3 col-xxl-6 offset-lg-2 col-lg-8">
+                            <div id="carruselAlbumes" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="bg-dark p-3 d-flex flex-row align-items-center alturaCarrusel">
+                                            <div class="w-50 d-flex justify-content-center"><img src="img/Neffex.png"
+                                                    class="d-block w-75" alt="Logo de Neffex"></div>
+                                            <div class="w-50 d-flex flex-column justify-content-around ps-2">
+                                                <div>
+                                                    <h3>Neffex</h3>
+                                                </div>
+                                                <div>
+                                                    <p class="text-secondary">Neffex es un proyecto musical
+                                                        estadounidense
+                                                        compuesto por Bryce Savage y anteriormente Cameron Wales.
+                                                        Producen
+                                                        remixes y canciones originales caracterizadas por una mezcla de
+                                                        géneros
+                                                        electrónicos y rap</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="bg-dark p-3 d-flex flex-row">
-                                    <div class="w-50"><img src="img/AeroSmith.jpg" class="d-block w-100"
-                                            alt="Logo de AeroSmith"></div>
-                                    <div class="w-50 d-flex flex-column justify-content-around ps-2">
-                                        <div>
-                                            <h3>AeroSmith</h3>
-                                        </div>
-                                        <div>
-                                            <p class="text-secondary">Aerosmith es una banda estadounidense de
-                                                rock formada en Boston en 1970. Sus miembros son: Steven Tyler, Joe
-                                                Perry, Tom Hamilton, Joey Kramer y Brad Whitford.</p>
+                                    <div class="carousel-item">
+                                        <div class="bg-dark p-3 d-flex flex-row align-items-center alturaCarrusel">
+                                            <div class="w-50 d-flex justify-content-center"><img src="img/ADDC.png"
+                                                    class="d-block w-75" alt="Logo de AC/DC">
+                                            </div>
+                                            <div class="w-50 d-flex flex-column justify-content-around ps-2">
+                                                <div>
+                                                    <h3>AC/DC</h3>
+                                                </div>
+                                                <div>
+                                                    <p class="text-secondary">AC/DC es una banda de hard rock
+                                                        británica-australiana, formada en 1973 en Australia por los
+                                                        hermanos
+                                                        escoceses Malcolm Young y Angus Young</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="bg-dark p-3 d-flex flex-row">
-                                    <div class="w-50"><img src="img/SteveAoki.jpg" class="d-block w-100"
-                                            alt="Logo de AeroSmith"></div>
-                                    <div class="w-50 d-flex flex-column justify-content-around ps-2">
-                                        <div>
-                                            <h3>Steve Aoki</h3>
+                                    <div class="carousel-item">
+                                        <div class="bg-dark p-3 d-flex flex-row align-items-center alturaCarrusel">
+                                            <div class="w-50 d-flex justify-content-center"><img src="img/AeroSmith.jpg"
+                                                    class="d-block w-75" alt="Logo de AeroSmith"></div>
+                                            <div class="w-50 d-flex flex-column justify-content-around ps-2">
+                                                <div>
+                                                    <h3>AeroSmith</h3>
+                                                </div>
+                                                <div>
+                                                    <p class="text-secondary">Aerosmith es una banda estadounidense de
+                                                        rock formada en Boston en 1970. Sus miembros son: Steven Tyler,
+                                                        Joe
+                                                        Perry, Tom Hamilton, Joey Kramer y Brad Whitford.</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <p class="text-secondary">Steven Hiroyuki Aoki más conocido como Steve Aoki,
-                                                es un DJ y productor estadounidense-japonés de EDM y fundador del sello
-                                                discográfico Dim Mak Records.</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="bg-dark p-3 d-flex flex-row align-items-center alturaCarrusel">
+                                            <div class="w-50 d-flex justify-content-center"><img src="img/SteveAoki.jpg"
+                                                    class="d-block w-75" alt="Logo de AeroSmith"></div>
+                                            <div class="w-50 d-flex flex-column justify-content-around ps-2">
+                                                <div>
+                                                    <h3>Steve Aoki</h3>
+                                                </div>
+                                                <div>
+                                                    <p class="text-secondary">Steven Hiroyuki Aoki más conocido como
+                                                        Steve Aoki,
+                                                        es un DJ y productor estadounidense-japonés de EDM y fundador
+                                                        del sello
+                                                        discográfico Dim Mak Records.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -426,88 +963,107 @@
                 <section>
                     <h3>Quizás te guste...</h3>
 
-                    <div class="d-flex justify-content-around">
-                        <div class="card border-0 cartaMenu bg-dark m-3">
-                            <img src="img/BadBunny.jpeg" class="card-img-top" alt="Album de bad bunny">
-                            <div class="card-body">
-                                <h5 class="text-decoration-underline">Bad bunny</h5>
-                                <p class="card-text">
-                                    Las que no iban a salir
-                                </p>
+                    <div class="row">
+                        <div class="col-6 col-xl-3">
+                            <div class="card border-0 cartaMenu bg-dark m-3 mx-auto">
+                                <img src="img/BadBunny.jpeg" class="card-img-top" alt="Album de bad bunny">
+                                <div class="card-body">
+                                    <h5 class="text-decoration-underline">Bad bunny</h5>
+                                    <p class="card-text">
+                                        Las que no iban a salir
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card border-0 cartaMenu bg-dark m-3">
-                            <img src="img/Bruno Mars.jpg" class="card-img-top" alt="Album de Bruno Mars">
-                            <div class="card-body">
-                                <h5 class="text-decoration-underline">Bruno Mars</h5>
-                                <p class="card-text">
-                                    24k Magic
-                                </p>
+                        <div class="col-6 col-xl-3">
+                            <div class="card border-0 cartaMenu bg-dark m-3 mx-auto">
+                                <img src="img/Bruno Mars.jpg" class="card-img-top" alt="Album de Bruno Mars">
+                                <div class="card-body">
+                                    <h5 class="text-decoration-underline">Bruno Mars</h5>
+                                    <p class="card-text">
+                                        24k Magic
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card border-0 cartaMenu bg-dark m-3">
-                            <img src="img/JBalvin.jpg" class="card-img-top" alt="Album de J Balvin">
-                            <div class="card-body">
-                                <h5 class="text-decoration-underline">J Balvin</h5>
-                                <p class="card-text">
-                                    Colores
-                                </p>
+                        <div class="col-6 col-xl-3">
+                            <div class="card border-0 cartaMenu bg-dark m-3 mx-auto">
+                                <img src="img/JBalvin.jpg" class="card-img-top" alt="Album de J Balvin">
+                                <div class="card-body">
+                                    <h5 class="text-decoration-underline">J Balvin</h5>
+                                    <p class="card-text">
+                                        Colores
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card border-0 cartaMenu bg-dark m-3">
-                            <img src="img/Eminem.jpg" class="card-img-top" alt="Album de Eminem">
-                            <div class="card-body">
-                                <h5 class="text-decoration-underline">Eminem</h5>
-                                <p class="card-text">
-                                    The Eminem Show
-                                </p>
+                        <div class="col-6 col-xl-3">
+                            <div class="card border-0 cartaMenu bg-dark m-3 mx-auto">
+                                <img src="img/Eminem.jpg" class="card-img-top" alt="Album de Eminem">
+                                <div class="card-body">
+                                    <h5 class="text-decoration-underline">Eminem</h5>
+                                    <p class="card-text">
+                                        The Eminem Show
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
+
                 <section>
                     <h3>Lo mejor de España</h3>
-                    <div class="d-flex justify-content-around">
-                        <div class="card border-0 cartaMenu bg-dark m-3">
-                            <img src="img/Melendi.jfif" class="card-img-top" alt="Album de Melendi">
-                            <div class="card-body">
-                                <h5 class="text-decoration-underline">Melendi</h5>
-                                <p class="card-text">
-                                    Lágrimas desordenadas
-                                </p>
+                    <div class="row">
+                        <div class="col-6 col-xl-3">
+                            <div class="card border-0 cartaMenu bg-dark m-3 mx-auto">
+                                <img src="img/Melendi.jfif" class="card-img-top" alt="Album de Melendi">
+                                <div class="card-body">
+                                    <h5 class="text-decoration-underline">Melendi</h5>
+                                    <p class="card-text">
+                                        Lágrimas desordenadas
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card border-0 cartaMenu bg-dark m-3">
-                            <img src="img/Fito y Fitipaldis.jpg" class="card-img-top" alt="Album de Fito y Fitipaldis">
-                            <div class="card-body">
-                                <h5 class="text-decoration-underline">Fito y Fitipaldis</h5>
-                                <p class="card-text">
-                                    Lo Más Lejos a Tu Lado
-                                </p>
+                        <div class="col-6 col-xl-3">
+                            <div class="card border-0 cartaMenu bg-dark m-3 mx-auto">
+                                <img src="img/Fito y Fitipaldis.jpg" class="card-img-top"
+                                    alt="Album de Fito y Fitipaldis">
+                                <div class="card-body">
+                                    <h5 class="text-decoration-underline">Fito y Fitipaldis</h5>
+                                    <p class="card-text">
+                                        Lo Más Lejos a Tu Lado
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card border-0 cartaMenu bg-dark m-3">
-                            <img src="img/Estopa.jpg" class="card-img-top" alt="Album de Estopa">
-                            <div class="card-body">
-                                <h5 class="text-decoration-underline">Estopa</h5>
-                                <p class="card-text">
-                                    ¿La calle es tuya?
-                                </p>
+                        <div class="col-6 col-xl-3">
+                            <div class="card border-0 cartaMenu bg-dark m-3 mx-auto">
+                                <img src="img/Estopa.jpg" class="card-img-top" alt="Album de Estopa">
+                                <div class="card-body">
+                                    <h5 class="text-decoration-underline">Estopa</h5>
+                                    <p class="card-text">
+                                        ¿La calle es tuya?
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card border-0 cartaMenu bg-dark m-3">
-                            <img src="img/Rosalia.jpg" class="card-img-top" alt="Album de Rosalia">
-                            <div class="card-body">
-                                <h5 class="text-decoration-underline">Rosalia</h5>
-                                <p class="card-text">
-                                    El Mal Querer
-                                </p>
+                        <div class="col-6 col-xl-3">
+                            <div class="card border-0 cartaMenu bg-dark m-3 mx-auto">
+                                <img src="img/Rosalia.jpg" class="card-img-top" alt="Album de Rosalia">
+                                <div class="card-body">
+                                    <h5 class="text-decoration-underline">Rosalia</h5>
+                                    <p class="card-text">
+                                        El Mal Querer
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
-            <div class="col-2 scrollActivado bg-dark text-white pt-2 border-start border-primary p-3 pt-3">
+
+            <div class="col-xxl-2 d-xxl-block d-none scrollActivado bg-dark border-start border-primary p-3 pt-3">
                 <div>
                     <span class="h4 me-3">Amigos</span>
                     <span class="text-light position-relative">
@@ -598,7 +1154,7 @@
     <footer class="reproductor bg-dark text-light p-3 d-flex justify-content-between border-top border-primary">
         <div class="d-flex align-items-center">
             <img src="img/Mellow.jpeg" alt="Logo" class="footer-img">
-            <div class="d-flex flex-column justify-content-around ps-2">
+            <div class="d-flex flex-column justify-content-around ps-2 d-md-flex d-none">
                 <span>Mellow</span>
                 <span class="text-secondary">Showtek</span>
             </div>
@@ -628,7 +1184,7 @@
                     <path
                         d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z" />
                 </svg>
-                <span class="ps-2">Dispositivos vinculados</span>
+                <span class="ps-2 d-md-inline d-none">Dispositivos vinculados</span>
             </div>
 
             <div class="alert border border-primary d-flex align-items-center p-2" role="alert">
@@ -639,10 +1195,11 @@
                     <path
                         d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
                 </svg>
-                <span class="ps-2">Solo para usuarios premiun</span>
+                <span class="ps-2 d-md-inline d-none">Solo para usuarios premiun</span>
             </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
