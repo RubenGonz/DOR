@@ -6,12 +6,9 @@
     width: 5rem;
 }
 
-main>div>div {
-    height: 80vh;
-}
-
 .scrollActivado {
     overflow-y: scroll;
+    height: 82vh;
 }
 
 .reproductor {
@@ -29,11 +26,18 @@ main>div>div {
     background-color: #30363c;
 }
 
-.botonCanciones {
+.botonOpciones {
     padding: 1rem 1.25rem;
 }
 
 .cartaMenu {
-    width: 250px;
+    width: 200px;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+.login {
+    width: 500px;
+}

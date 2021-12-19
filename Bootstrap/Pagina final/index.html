@@ -22,23 +22,44 @@
                     <a href=""><img src="img/Logo.png" alt="Logo" class="nav-img"></a>
                     <a class="navbar-brand" href="#">Music Zone</a>
                 </div>
+
                 <span class="navbar-brand">Donde las palabras fallan, la música habla</span>
-                <button class="navbar-toggler" data-bs-toggle="offcanvas" href="#infoEmpresa">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="offcanvas offcanvas-end bg-dark text-white border-start border-primary" tabindex="-1"
-                    id="infoEmpresa">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title">Información de la empresa</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
+                <div data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span class="text-light fw-bold me-1">Iniciar sesión</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-person-circle text-primary" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg>
+                </div>
 
-                    <div class="offcanvas-body">
-                        <div>
-                            Some text as placeholder. In real life you can have the elements you have chosen. Like,
-                            text, images, lists, etc.
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Iniciar sesión</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="nombreUsuario" class="form-label">Nombre de usuario</label>
+                                        <input type="email" class="form-control" id="nombreUsuario"
+                                            placeholder="Juan1234">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="Contraseña" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="Contraseña" placeholder="****">
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button type="submit" class="btn btn-primary">Loguearse</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -50,7 +71,7 @@
         <div class="row m-0">
             <div class="col-2 scrollActivado bg-dark text-white border-end border-primary p-0">
 
-                <button class="bg-dark text-light border-0 botonCanciones" type="button">
+                <button class="bg-dark text-light border-0 botonOpciones pb-2" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-music-note text-primary" viewBox="0 0 16 16">
                         <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2z" />
@@ -138,10 +159,32 @@
                             aria-labelledby="cabeceraAcordeon3" data-bs-parent="#acordeonOpciones">
                             <div class="accordion-body grisClaro">
                                 <ul class="mb-0">
-                                    <li>Destiny: The collection</li>
-                                    <li>Atrevido</li>
-                                    <li>10:20:40</li>
-                                    <li>Energía</li>
+
+                                    <li>
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item">NEFFEX</li>
+                                            <li class="breadcrumb-item active">Destiny: The
+                                                collection</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item">Trueno</li>
+                                            <li class="breadcrumb-item active">Atrevido</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item">Melendi</li>
+                                            <li class="breadcrumb-item active">10:20:40</li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item">J Balvin</li>
+                                            <li class="breadcrumb-item active">Energía</li>
+                                        </ol>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -170,6 +213,53 @@
                                     <li>Trueno</li>
                                     <li>AC/DC</li>
                                 </ul>
+                            </div>
+                        </div>
+                        <button class="bg-dark text-light border-0 botonOpciones py-2" type="button"
+                            data-bs-toggle="offcanvas" href="#infoEmpresa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-info-circle text-primary" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+                            <span class="ms-3">Información de la empresa</span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end bg-dark text-white border-start border-primary"
+                            tabindex="-1" id="infoEmpresa">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title">Información de la empresa</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body">
+                                <div class="py-3">
+                                    <div>EMPRESA</div>
+                                    <ul>
+                                        <li class="ps-3">Acerca de</li>
+                                        <li class="ps-3">Empleo</li>
+                                        <li class="ps-3">For the Record</li>
+                                    </ul>
+                                </div>
+                                <div class="py-3">
+                                    <div>COMUNIDADES</div>
+                                    <ul>
+                                        <li class="ps-3">Para artistas</li>
+                                        <li class="ps-3">Desarrolladores</li>
+                                        <li class="ps-3">Publicidad</li>
+                                        <li class="ps-3">Proveedores</li>
+                                    </ul>
+                                </div>
+                                <div class="py-3">
+                                    <div>ENLACES ÚTILES</div>
+                                    <ul>
+                                        <li class="ps-3">Asistencia</li>
+                                        <li class="ps-3">Reproductor web</li>
+                                        <li class="ps-3">App gratis para móvil</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -261,7 +351,7 @@
 
             <div class="col-8 scrollActivado grisClaro text-white pt-2">
                 <section>
-                    <h3>Lo esta petando</h3>
+                    <h3>Lo esta petando...</h3>
                     <div id="carruselAlbumes" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -336,8 +426,8 @@
                 <section>
                     <h3>Quizás te guste...</h3>
 
-                    <div>
-                        <div class="card border-0 cartaMenu bg-dark">
+                    <div class="d-flex justify-content-around">
+                        <div class="card border-0 cartaMenu bg-dark m-3">
                             <img src="img/BadBunny.jpeg" class="card-img-top" alt="Album de bad bunny">
                             <div class="card-body">
                                 <h5 class="text-decoration-underline">Bad bunny</h5>
@@ -346,48 +436,30 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="card border-0 cartaMenu bg-dark">
-                            <img src="img/BadBunny.jpeg" class="card-img-top" alt="Album de bad bunny">
+                        <div class="card border-0 cartaMenu bg-dark m-3">
+                            <img src="img/Bruno Mars.jpg" class="card-img-top" alt="Album de Bruno Mars">
                             <div class="card-body">
-                                <h5 class="text-decoration-underline">Bad bunny</h5>
+                                <h5 class="text-decoration-underline">Bruno Mars</h5>
                                 <p class="card-text">
-                                    Las que no iban a salir
+                                    24k Magic
                                 </p>
                             </div>
                         </div>
-                        <div class="card border-0 cartaMenu bg-dark">
-                            <img src="img/BadBunny.jpeg" class="card-img-top" alt="Album de bad bunny">
+                        <div class="card border-0 cartaMenu bg-dark m-3">
+                            <img src="img/JBalvin.jpg" class="card-img-top" alt="Album de J Balvin">
                             <div class="card-body">
-                                <h5 class="text-decoration-underline">Bad bunny</h5>
+                                <h5 class="text-decoration-underline">J Balvin</h5>
                                 <p class="card-text">
-                                    Las que no iban a salir
+                                    Colores
                                 </p>
                             </div>
                         </div>
-                        <div class="card border-0 cartaMenu bg-dark">
-                            <img src="img/BadBunny.jpeg" class="card-img-top" alt="Album de bad bunny">
+                        <div class="card border-0 cartaMenu bg-dark m-3">
+                            <img src="img/Eminem.jpg" class="card-img-top" alt="Album de Eminem">
                             <div class="card-body">
-                                <h5 class="text-decoration-underline">Bad bunny</h5>
+                                <h5 class="text-decoration-underline">Eminem</h5>
                                 <p class="card-text">
-                                    Las que no iban a salir
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card border-0 cartaMenu bg-dark">
-                            <img src="img/BadBunny.jpeg" class="card-img-top" alt="Album de bad bunny">
-                            <div class="card-body">
-                                <h5 class="text-decoration-underline">Bad bunny</h5>
-                                <p class="card-text">
-                                    Las que no iban a salir
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card border-0 cartaMenu bg-dark">
-                            <img src="img/BadBunny.jpeg" class="card-img-top" alt="Album de bad bunny">
-                            <div class="card-body">
-                                <h5 class="text-decoration-underline">Bad bunny</h5>
-                                <p class="card-text">
-                                    Las que no iban a salir
+                                    The Eminem Show
                                 </p>
                             </div>
                         </div>
@@ -395,6 +467,44 @@
                 </section>
                 <section>
                     <h3>Lo mejor de España</h3>
+                    <div class="d-flex justify-content-around">
+                        <div class="card border-0 cartaMenu bg-dark m-3">
+                            <img src="img/Melendi.jfif" class="card-img-top" alt="Album de Melendi">
+                            <div class="card-body">
+                                <h5 class="text-decoration-underline">Melendi</h5>
+                                <p class="card-text">
+                                    Lágrimas desordenadas
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card border-0 cartaMenu bg-dark m-3">
+                            <img src="img/Fito y Fitipaldis.jpg" class="card-img-top" alt="Album de Fito y Fitipaldis">
+                            <div class="card-body">
+                                <h5 class="text-decoration-underline">Fito y Fitipaldis</h5>
+                                <p class="card-text">
+                                    Lo Más Lejos a Tu Lado
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card border-0 cartaMenu bg-dark m-3">
+                            <img src="img/Estopa.jpg" class="card-img-top" alt="Album de Estopa">
+                            <div class="card-body">
+                                <h5 class="text-decoration-underline">Estopa</h5>
+                                <p class="card-text">
+                                    ¿La calle es tuya?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card border-0 cartaMenu bg-dark m-3">
+                            <img src="img/Rosalia.jpg" class="card-img-top" alt="Album de Rosalia">
+                            <div class="card-body">
+                                <h5 class="text-decoration-underline">Rosalia</h5>
+                                <p class="card-text">
+                                    El Mal Querer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
             <div class="col-2 scrollActivado bg-dark text-white pt-2 border-start border-primary p-3 pt-3">
@@ -487,7 +597,7 @@
 
     <footer class="reproductor bg-dark text-light p-3 d-flex justify-content-between border-top border-primary">
         <div class="d-flex align-items-center">
-            <img src="img/disco.jpg" alt="Logo" class="footer-img">
+            <img src="img/Mellow.jpeg" alt="Logo" class="footer-img">
             <div class="d-flex flex-column justify-content-around ps-2">
                 <span>Mellow</span>
                 <span class="text-secondary">Showtek</span>
@@ -511,15 +621,29 @@
                     d="M15.5 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V8.752l-6.267 3.636c-.52.302-1.233-.043-1.233-.696v-2.94l-6.267 3.636C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696L7.5 7.248v-2.94c0-.653.713-.998 1.233-.696L15 7.248V4a.5.5 0 0 1 .5-.5zM1 4.633v6.734L6.804 8 1 4.633zm7.5 0v6.734L14.304 8 8.5 4.633z" />
             </svg>
         </div>
-        <div class="d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-pc-display text-primary m-2" viewBox="0 0 16 16">
-                <path
-                    d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z" />
-            </svg>
-            <span class="ps-2">Dispositivos vinculados</span>
+        <div class="d-flex flex-column align-items-center">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-pc-display text-primary m-2" viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z" />
+                </svg>
+                <span class="ps-2">Dispositivos vinculados</span>
+            </div>
+
+            <div class="alert border border-primary d-flex align-items-center p-2" role="alert">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-exclamation-diamond text-primary" viewBox="0 0 16 16">
+                    <path
+                        d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z" />
+                    <path
+                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                </svg>
+                <span class="ps-2">Solo para usuarios premiun</span>
+            </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
