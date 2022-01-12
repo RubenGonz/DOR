@@ -1,0 +1,17 @@
+/* Error: Expected expression.
+ *    ,
+ * 43 |                 font-weight:
+ *    |                             ^
+ *    '
+ *   Sass\ejer1\scss\ejercicio.scss 43:29  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected expression.\a    \2577 \a 43 \2502                  font-weight:\a    \2502                              ^\a    \2575 \a   Sass\\ejer1\\scss\\ejercicio.scss 43:29  root stylesheet";
+}
