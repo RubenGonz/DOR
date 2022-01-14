@@ -1,17 +1,47 @@
-/* Error: Expected expression.
- *    ,
- * 43 |                 font-weight:
- *    |                             ^
- *    '
- *   Sass\ejer1\scss\ejercicio.scss 43:29  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a    \2577 \a 43 \2502                  font-weight:\a    \2502                              ^\a    \2575 \a   Sass\\ejer1\\scss\\ejercicio.scss 43:29  root stylesheet";
+@charset "UTF-8";
+/*Estilos para el contenedor general de mi página*/
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
+
+/*Usando anidamiento crear la hoja de estilos para un menú */
+nav {
+  background-color: #9b6f91;
+  padding: 0.2rem;
+}
+nav ul li {
+  display: inline;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+nav ul li.active {
+  color: white;
+  font-weight: 1rem;
+}
+nav ul li:hover {
+  color: white;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+/*Estructura de anidamiento para la figura (cards)*/
+figure.card {
+  border: 0.1rem solid #4c4c4c;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 1rem;
+  width: 25%;
+}
+figure.card img {
+  border-radius: 2rem;
+  width: 100%;
+}
+figure.card figcaption {
+  font-size: 0.8rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
