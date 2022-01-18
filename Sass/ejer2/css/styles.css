@@ -1,0 +1,112 @@
+.btn {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+}
+.btn:hover {
+  box-shadow: 0.2rem 0.2rem gray;
+}
+.btn:active {
+  background-color: orange;
+  color: white;
+}
+
+table {
+  border-collapse: none;
+}
+
+th,
+td {
+  border: none;
+  padding: 1rem;
+}
+
+tbody tr td:nth-child(1) {
+  background-color: colum-color(1);
+}
+
+tbody tr td:nth-child(2) {
+  background-color: colum-color(2);
+}
+
+tbody tr td:nth-child(3) {
+  background-color: colum-color(3);
+}
+
+tbody tr td:nth-child(4) {
+  background-color: colum-color(4);
+}
+
+tbody tr td:nth-child(5) {
+  background-color: colum-color(5);
+}
+
+tbody tr td:nth-child(6) {
+  background-color: colum-color(6);
+}
+
+tbody tr td:nth-child(7) {
+  background-color: colum-color(7);
+}
+
+tbody tr td:nth-child(8) {
+  background-color: colum-color(8);
+}
+
+tbody tr td:nth-child(9) {
+  background-color: colum-color(9);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row > * {
+  border: 1px solid black;
+  height: 150px;
+}
+
+.row > .col-1 {
+  padding: 1rem;
+  width: anchura_col(1)%;
+}
+
+.row > .col-2 {
+  padding: 1rem;
+  width: anchura_col(2)%;
+}
+
+.row > .col-3 {
+  padding: 1rem;
+  width: anchura_col(3)%;
+}
+
+.row > .col-4 {
+  padding: 1rem;
+  width: anchura_col(4)%;
+}
+
+.row > .col-5 {
+  padding: 1rem;
+  width: anchura_col(5)%;
+}
+
+.row > .col-6 {
+  padding: 1rem;
+  width: anchura_col(6)%;
+}
+
+.row > .col-7 {
+  padding: 1rem;
+  width: anchura_col(7)%;
+}
+
+.row > .col-8 {
+  padding: 1rem;
+  width: anchura_col(8)%;
+}
+
+/*# sourceMappingURL=styles.css.map */
