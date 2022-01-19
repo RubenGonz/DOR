@@ -1,0 +1,16 @@
+$color-seleccion: blue;
+
+section {
+    background-color: $color-seleccion;
+    padding: 10px;
+
+    article {
+        background-color: lighten($color-seleccion, 30%);
+        margin: 5px;
+        padding: 5px; 
+
+        &:hover {
+            background-color: invert($color-seleccion, $weight: 100%);
+        }
+    }
+}
