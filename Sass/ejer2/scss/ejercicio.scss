@@ -14,7 +14,7 @@ $border-radius: 0.4rem;
 $btn-colors: (
   "error": $color-error,
   "warning": $color-warning,
-  "accepted":$color-accepted,
+  "accepted": $color-accepted,
   "normal": $color-normal
 );
 
@@ -27,43 +27,47 @@ $btn-colors: (
   padding: 0.5rem;
 
   &:hover {
-    box-shadow: $border-radius/2 $border-radius/2 $color-shadow;
+    box-shadow: calc($border-radius/2) calc($border-radius/2) $color-shadow;
   }
-//Cuando se pulse el boton tendra fondo naranja y color de letra blanco
+  
   &:active {
     background-color: orange;
     color: white;
   }
 }
 
-//Clase adicional que le da color
-//Realizar una estructura EACH para recorrer el mapa de $btn-colors 
-//asignando a cada btn-xxxxx el background-color asignado en el mapa
+@each $color, $codigo in $btn-colors {
+  .btn-#{$color} {
+    background-color: $codigo;
+  }
+}
 
-
-//Estilos genreales para la tabla
+//Estilos generales para la tabla
 table {
-  border-collapse: none;
+  border-collapse: collapse;
 }
 
 th,
 td {
-  border: none;
+  border: 1px solid black;
   padding: 1rem;
 }
 
 //Colores para los columnas
-$color-col-pares:#888888;
-$color-col-impares:#cccccc;
+$color-col-pares:#cccccc;
+$color-col-impares:#888888;
 
 //Realizar una función colum-color que cuando reciba un numero devuelva el color de fondo par o impar de las columnas dependiendo
 // de si ese numero es par o impar usando dentro de la función una estructura if-else
 
+@function colum-color($num) {
+  @if $num % 2 == 0 {@return $color-col-pares;}
+  @return $color-col-impares;
+}
 
 //Establezco el número máximo de columnas
 $inicio: 1;
 $fin: 10;
-
 
 @for $num from $inicio to $fin {
   tbody tr td:nth-child(#{$num}) {
@@ -91,7 +95,7 @@ $num_elementos: 8;
 
 //Realizar una función anchura-col que pasado el numero de columna te devuelve la anchura correspondiente a ese numero
 
-
+@function anchura_col($num) {@return calc($num*100/$num_elementos);}
 
 //Bucle para generar las clases
 @for $i from 1 through $num_elementos {
