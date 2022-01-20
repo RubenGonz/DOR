@@ -1,0 +1,37 @@
+.flexible-100-blue {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flexible-100-blue > div {
+  width: 100px;
+  background-color: blue;
+  margin: 5px;
+  text-align: center;
+}
+
+.flexible-150-yellow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flexible-150-yellow > div {
+  width: 150px;
+  background-color: yellow;
+  margin: 5px;
+  text-align: center;
+}
+
+.flexible-200-red {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flexible-200-red > div {
+  width: 200px;
+  background-color: red;
+  margin: 5px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

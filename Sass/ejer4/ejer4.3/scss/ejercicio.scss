@@ -1,0 +1,20 @@
+$tamanio-colores: (
+  "100": blue,
+  "150": yellow,
+  "200": red
+);
+
+@each $tamanio, $color in $tamanio-colores {
+    .flexible-#{$tamanio}-#{""+$color} {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        & > div {
+            width: #{$tamanio} + "px";
+            background-color: #{$color};
+            margin: 5px;
+            text-align: center;
+        }
+    }
+}
