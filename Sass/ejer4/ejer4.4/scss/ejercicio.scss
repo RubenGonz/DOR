@@ -1,0 +1,5 @@
+@for $i from 0 through 5 {
+    .texto#{$i} {
+        font-size: calc(1 + $i * 0.2) + rem;
+    }
+}

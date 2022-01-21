@@ -1,0 +1,33 @@
+$contenedores:((normal, white, black, 1px, suave, false),
+    (aviso, orange, black, 2px, fuerte, false),
+    (correcto, lightgreen, #660066, 3px, normal, true));
+
+@function ponerSombra($tipoSombra) {
+
+    $sombraFinal: map-get((suave : 1px 1px 3px,
+                normal : 3px 3px 6px,
+                fuerte : 6px 6px 12px,
+            ), $tipoSombra);
+
+    @return $sombraFinal;
+}
+
+@each $nombreClase,
+$colorFondo,
+$colorPrincipal,
+$anchoBorde,
+$tipoSombra,
+$alineacionTexto in $contenedores {
+    .#{$nombreClase} {
+        margin: 10px;
+        padding: 10px;
+        color: $colorPrincipal;
+        background-color: $colorFondo;
+        border: $anchoBorde solid $colorPrincipal;
+        box-shadow: ponerSombra($tipoSombra) black;
+
+        @if $alineacionTexto {
+            text-align: center;
+        }
+    }
+}
