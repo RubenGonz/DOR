@@ -1,0 +1,31 @@
+.miClase h1 {
+  color: #b82e5c;
+  font-size: 5rem;
+}
+
+.miClase h2 {
+  color: #a32952;
+  font-size: 4rem;
+}
+
+.miClase h3 {
+  color: #8f2447;
+  font-size: 3.2rem;
+}
+
+.miClase h4 {
+  color: #7a1f3d;
+  font-size: 2.56rem;
+}
+
+.miClase h5 {
+  color: #661a33;
+  font-size: 2.048rem;
+}
+
+.miClase h6 {
+  color: #521429;
+  font-size: 1.6384rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
