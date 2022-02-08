@@ -1,0 +1,47 @@
+.nav-img {
+    width: 2rem;
+}
+
+.footer-img {
+    width: 5rem;
+}
+
+.scrollActivado {
+    overflow-y: scroll;
+    height: 82vh;
+}
+
+.reproductor {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.amigo {
+    width: 3rem;
+}
+
+.grisClaro {
+    background-color: #30363c;
+}
+
+.botonOpciones {
+    padding: 1rem 1.25rem;
+}
+
+.cartaMenu {
+    width: 200px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+.login {
+    width: 500px;
+}
+
+.alturaCarrusel {
+    height: 300px;
+}

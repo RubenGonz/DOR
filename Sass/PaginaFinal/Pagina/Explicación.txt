@@ -1,0 +1,43 @@
+Navbar
+
+Se encuentra en la cabecera de la página
+
+Acordeón
+
+Se encuentra en la sección de la izquierda en pantallas medianas y grandes y en las opciones de las pantallas pequeñas 
+
+Alerta
+
+Se encuentra en la parte derecha del reproductor del footer
+
+Badge
+
+Se encuentra en la sección de amigos de las pantallas grandes y en la sección de las opciones de las pantallas pequeñas 
+
+Breadcrumb
+
+Se encuentra en el acordeón, en la parte de los albumes
+
+Cards
+
+Se encuentran en la sección principal
+
+Carrusel
+
+Se encuentran en la sección principal
+
+Botón modal
+
+Se encuentran en la parte del login
+
+Offcanvas
+
+Se encuentran en la parte de las opciones para ver la información de la empresa y los amigos en las pantallas medianas y pequeñas
+
+Formulario
+
+Se encuentra en el Login
+
+Iconos (Al menos 2)
+
+Se encuentran repartidos en el footer, las opciones y la barra de navegación
