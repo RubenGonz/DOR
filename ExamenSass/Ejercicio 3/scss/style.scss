@@ -1,0 +1,38 @@
+$formatos: (('relax', #93a8b7, 60, Verdana),
+('contrast', #cccccc, -65),
+('love', #f8afb2, 30, Gabriola),
+('psico', #1b4d48, 30, "Arial Black"),
+('moderm', #fec87c, -20, Impact));
+
+@function calcularColorSombra($color) {
+    $luminosidad: lightness($color);
+    @if $luminosidad >= 50% {@return black;} 
+    @else {@return white;}
+}
+
+@function ponerPositivo($opacidad) {
+    @if $opacidad >=0 {@return calc($opacidad/100);} 
+    @else {@return calc($opacidad/100*-1);} 
+}
+
+@function calcularFondo($opacidad) {
+    @if $opacidad >=0 {@return 255;} 
+    @else {@return 0;} 
+}
+
+@each $nombre,$color,$opacidad,$fuente in $formatos {
+    .#{$nombre} {
+        background-image: url("../patrones/" + $nombre + ".png");
+        padding: 5px;
+
+        article {
+            padding:10px;
+            margin:10px;
+            color: $color;
+            @if $fuente == null {font-family: "Comic Sans MS";} 
+            @else {font-family: $fuente;}            
+            background-color: rgba(calcularFondo($opacidad), calcularFondo($opacidad), calcularFondo($opacidad), ponerPositivo($opacidad));
+            text-shadow: 2px 2px 2px calcularColorSombra($color);
+        }
+    }
+}

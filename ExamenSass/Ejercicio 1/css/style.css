@@ -1,0 +1,19 @@
+.card-intrepida {
+  font-size: 11pt;
+  color: red;
+  background-color: lightgray;
+}
+
+.card-clasica {
+  font-size: 12pt;
+  color: black;
+  background-color: white;
+}
+
+.card-inversa {
+  font-size: 9pt;
+  color: orange;
+  background-color: silver;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+@function calcularTamanio($i,$tamanio,$reduccion) {
+    $tamanioFinal: $tamanio;
+
+    @for $indice from 1 to $i {
+        $tamanioFinal:calc($tamanioFinal*$reduccion/100)
+    }
+    @return $tamanioFinal;
+}
+
+@mixin primerMixin($clase,$color,$tamanio,$reduccion) {
+    @for $i from 1 through 6 {
+        .#{$clase} h#{$i} {
+            color: lighten(#919b09,calc(10%*$i));
+            font-size: calcularTamanio($i,$tamanio,$reduccion);
+        }
+    }
+}
+
+@include primerMixin("miclase",#919b09, 5rem, 70);

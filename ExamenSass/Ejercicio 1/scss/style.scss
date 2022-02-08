@@ -1,0 +1,11 @@
+$formatos: ((intrepida, 11pt, red, lightgray),
+(clasica, 12pt, black, white),
+(inversa, 9pt, orange, silver));
+
+@each $nombre,$tamanioFuente,$color,$fondo in $formatos {
+    .card-#{$nombre} {
+        font-size: #{$tamanioFuente};
+        color: #{$color};
+        background-color: #{$fondo};
+    }
+}
