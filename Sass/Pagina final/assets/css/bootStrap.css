@@ -2155,8 +2155,8 @@ progress {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+  color: white;
+  background-color: #30363C;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   appearance: none;
@@ -2175,11 +2175,11 @@ progress {
   cursor: pointer;
 }
 .form-control:focus {
-  color: #212529;
-  background-color: #fff;
+  color: white;
+  background-color: #30363C;
   border-color: #86b7fe;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0px 0px 5px 2px #0d6efd;
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -2189,7 +2189,7 @@ progress {
   opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {
-  background-color: #e9ecef;
+  background-color: #414952;
   opacity: 1;
 }
 .form-control::file-selector-button {
@@ -2639,11 +2639,11 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: white;
   text-align: center;
   white-space: nowrap;
-  background-color: #e9ecef;
-  border: 1px solid #ced4da;
+  background-color: #212529;
+  border: 1px solid white;
   border-radius: 0.25rem;
 }
 
@@ -5220,11 +5220,12 @@ textarea.form-control-lg {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: #30363C;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
+  box-shadow: 0px 0px 25px 15px #0d6efd;
 }
 
 .modal-backdrop {
@@ -5259,6 +5260,7 @@ textarea.form-control-lg {
 }
 
 .modal-title {
+  color: #fff;
   margin-bottom: 0;
   line-height: 1.5;
 }
@@ -5944,7 +5946,8 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: padding-box;
   outline: 0;
-  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 0px 25px 15px #0d6efd;
+  transition: transform 1s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .offcanvas {
@@ -5966,8 +5969,9 @@ textarea.form-control-lg {
 }
 
 .offcanvas-title {
+  font-size: 1.75rem;
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .offcanvas-body {
@@ -5979,7 +5983,7 @@ textarea.form-control-lg {
 .offcanvas-start {
   top: 0;
   left: 0;
-  width: 400px;
+  width: 250px;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(-100%);
 }
@@ -5987,7 +5991,7 @@ textarea.form-control-lg {
 .offcanvas-end {
   top: 0;
   right: 0;
-  width: 400px;
+  width: 250px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(100%);
 }

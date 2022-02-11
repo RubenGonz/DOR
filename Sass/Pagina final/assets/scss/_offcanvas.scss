@@ -10,7 +10,7 @@
   background-color: $offcanvas-bg-color;
   background-clip: padding-box;
   outline: 0;
-  @include box-shadow($offcanvas-box-shadow);
+  box-shadow: $offcanvas-box-shadow;
   @include transition(transform $offcanvas-transition-duration ease-in-out);
 }
 
@@ -29,6 +29,7 @@
 }
 
 .offcanvas-title {
+  font-size: 1.75rem;
   margin-bottom: 0;
   line-height: $offcanvas-title-line-height;
 }

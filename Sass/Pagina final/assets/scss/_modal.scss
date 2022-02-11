@@ -74,13 +74,14 @@
   // counteract the pointer-events: none; in the .modal-dialog
   color: $modal-content-color;
   pointer-events: auto;
-  background-color: $modal-content-bg;
+  background-color: #30363C;
   background-clip: padding-box;
   border: $modal-content-border-width solid $modal-content-border-color;
   @include border-radius($modal-content-border-radius);
   @include box-shadow($modal-content-box-shadow-xs);
   // Remove focus outline from opened modal
   outline: 0;
+  box-shadow: 0px 0px 25px 15px $primary;
 }
 
 // Modal background
@@ -117,6 +118,7 @@
 
 // Title text within header
 .modal-title {
+  color: $white;
   margin-bottom: 0;
   line-height: $modal-title-line-height;
 }
