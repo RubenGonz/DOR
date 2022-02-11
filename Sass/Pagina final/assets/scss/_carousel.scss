@@ -24,6 +24,10 @@
   width: 100%;
   overflow: hidden;
   @include clearfix();
+  box-shadow: 95px 0px 53px -55px $primary, -95px 0px 53px -55px $primary;
+  border-radius: 2rem;
+  border-left: 2px solid $primary;
+  border-right: 2px solid $primary;
 }
 
 .carousel-item {
@@ -180,12 +184,11 @@
     margin-left: $carousel-indicator-spacer;
     text-indent: -999px;
     cursor: pointer;
-    background-color: $carousel-indicator-active-bg;
+    background-color: $primary;
     background-clip: padding-box;
     border: 0;
-    // Use transparent borders to increase the hit area by 10px on top and bottom.
-    border-top: $carousel-indicator-hit-area-height solid transparent;
-    border-bottom: $carousel-indicator-hit-area-height solid transparent;
+    border-radius: 10px;
+
     opacity: $carousel-indicator-opacity;
     @include transition($carousel-indicator-transition);
   }
