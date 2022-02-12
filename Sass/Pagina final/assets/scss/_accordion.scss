@@ -90,6 +90,7 @@
 }
 
 .accordion-body {
+  box-shadow: 0px 0px 15px 0px $primary inset;
   padding: $accordion-body-padding-y $accordion-body-padding-x;
 }
 

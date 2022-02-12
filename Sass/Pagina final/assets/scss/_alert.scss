@@ -8,6 +8,7 @@
   margin-bottom: $alert-margin-bottom;
   border: $alert-border-width solid transparent;
   @include border-radius($alert-border-radius);
+  box-shadow: 0px 0px 5px 0px $primary inset;
 }
 
 // Headings for larger alerts
